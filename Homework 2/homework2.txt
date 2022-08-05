@@ -1,0 +1,41 @@
+#First Diagramm :
+
+Each object have to have a primary key, So Publication, Magazine and Book need one.
+So, we have to add :
+
+Publication -> id: int
+
+Each links between classes needs to have a direction and a description:
+
+Magazine => Article : have the article
+
+Article => Specialization : Specialize on 
+
+Publication => Specialization : Specialize on 
+
+Publication => Scientist : Write by the scientist
+
+Book => PublishingHouse : Publish by
+
+#Second Diagramm :
+
+Each object have to have a primary key, So Publication, Magazine and Book need one.
+So, we have to add :
+
+Specialization -> code: int
+
+Each links between classes needs to have a direction and a description:
+
+Author => Article : write the article
+
+Author => ScientificGroup : from the group
+
+Publication => Author : Write by
+
+Publication => Scientist : Write by the scientist
+
+Book => Scientist : Write by
+
+Book => PublishingHouse : Publish by
+
+
